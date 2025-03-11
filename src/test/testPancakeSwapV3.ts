@@ -14,7 +14,7 @@ import { PancakeSwapV3Swap } from "../pancakeswapV3/swap";
   const quote = await pancakeQuote.Quote(tokenIn, tokenOut, amountIn);
   console.log("Giá trị nhận được:", quote.toString());
 
-  console.log("Swap...");
-  const swapTx = await pancakeSwap.Swap(tokenIn, tokenOut, amountIn);
-  console.log("Giao dịch swap:", swapTx);
+  // console.log("Swap...");
+  // const swapTx = await pancakeSwap.Swap(tokenIn, tokenOut, amountIn);
+  // console.log("Giao dịch swap:", swapTx.toString());
 })();

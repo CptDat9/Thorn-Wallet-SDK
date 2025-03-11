@@ -16,8 +16,9 @@ export class PancakeSwapV3Quote {
     );
 
     try {
-      const quote = await QuoterV3.quoteExactInput.populateTransaction(path,
-        [],
+      const quote = await QuoterV3.quoteExactInput.populateTransaction(
+        path,
+        [BigInt(1)], //flag, ko bt dien gi
         ethers.parseUnits(amountIn, 18)
     );
       console.log("Quote:", quote.toString());
