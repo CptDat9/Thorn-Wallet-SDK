@@ -35,7 +35,7 @@ export class PancakeSwapV3Swap {
         sqrtPriceLimitX96: 0
       });
 
-      console.log("Swap transaction:", swapTx.toString());
+      console.log("Swap transaction:", JSON.stringify(swapTx, null, 2));
       return swapTx;
     } catch (error) {
       console.error("Error:", error);

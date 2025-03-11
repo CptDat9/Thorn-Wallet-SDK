@@ -21,8 +21,8 @@ export class PancakeSwapV3Quote {
         [BigInt(1)], //flag, ko bt dien gi
         ethers.parseUnits(amountIn, 18)
     );
-      console.log("Quote:", quote.toString());
-      return quote;
+    console.log("Quote:", JSON.stringify(quote, null, 2));
+    return quote;
     } catch (error) {
       console.error("Error:", error);
       throw error;
