@@ -15,10 +15,10 @@ export class PancakeSwapV3Swap {
     const amountInParsed = ethers.parseUnits(amountIn, 18);
     const tokenInContract = ERC20__factory.connect(tokenIn, wallet);
 
-    const balance = await tokenInContract.balanceOf(wallet.address);
-    if (balance < amountInParsed) {
-      throw new Error("Ví không đủ số dư.");
-    }
+    // const balance = await tokenInContract.balanceOf(wallet.address);
+    // if (balance < amountInParsed) {
+    //   throw new Error("Ví không đủ số dư.");
+    // }
 
     try {
       const txResponse = await tokenInContract.approve(await RouterV3.getAddress(), MaxUint256);

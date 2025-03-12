@@ -1,5 +1,5 @@
-import { PancakeSwapV3Quote } from "../pancakeswapV3/quote";
-import { PancakeSwapV3Swap } from "../pancakeswapV3/swap";
+import { PancakeSwapV3Quote } from "../src/pancakeswapV3/quote";
+import { PancakeSwapV3Swap } from "../src/pancakeswapV3/swap";
 
 (async () => {
   const pancakeQuote = new PancakeSwapV3Quote();

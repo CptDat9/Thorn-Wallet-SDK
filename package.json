@@ -1,14 +1,17 @@
 {
   "name": "pancakeswap-v3-sdk",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "description": "SDK for interacting with PancakeSwap V3 on BSC Testnet",
   "author": "",
   "license": "ISC",
-  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "dotenv": "^16.4.7",
     "ethers": "^6.13.5",
