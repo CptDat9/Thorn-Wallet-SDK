@@ -2,4 +2,4 @@
 /dist
 .env
 .DS_Store 
-/tsup.config.ts
+/tsconfig.json

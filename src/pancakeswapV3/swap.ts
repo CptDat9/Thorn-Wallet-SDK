@@ -1,7 +1,7 @@
 import { ethers, JsonRpcProvider, Wallet, MaxUint256 } from "ethers";
 import { SwapRouterV3__factory, ERC20__factory } from "../../typechain";
 import * as dotenv from "dotenv";
-import { CONTRACT_ADDRESSES } from "../config/addresses";
+import { CONTRACT_ADDRESSES } from "./config/addresses";
 dotenv.config();
 const { ROUTER_V3 } = CONTRACT_ADDRESSES;
 const bscProvider = new JsonRpcProvider(process.env.BSC_RPC_URL);

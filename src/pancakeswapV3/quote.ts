@@ -1,7 +1,7 @@
 import { ethers, JsonRpcProvider, Wallet } from "ethers";
 import { QuoterV2__factory } from "../../typechain";
 import * as dotenv from "dotenv";
-import { CONTRACT_ADDRESSES } from "../config/addresses";
+import { CONTRACT_ADDRESSES } from "./config/addresses";
 dotenv.config();
 const { QUOTER_V2 } = CONTRACT_ADDRESSES;
 const bscProvider = new JsonRpcProvider(process.env.BSC_RPC_URL);
